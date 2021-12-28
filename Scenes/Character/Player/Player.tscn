@@ -1,0 +1,162 @@
+[gd_scene load_steps=57 format=2]
+
+[ext_resource path="res://Scenes/Character/Player/Attack.cs" type="Script" id=1]
+[ext_resource path="res://Scenes/Character/Player/Player.cs" type="Script" id=2]
+[ext_resource path="res://Scenes/Character/Player/ImpStates.cs" type="Script" id=3]
+[ext_resource path="res://Scenes/Character/Player/Idle.cs" type="Script" id=4]
+[ext_resource path="res://Scenes/Character/Player/Jump.cs" type="Script" id=5]
+[ext_resource path="res://Scenes/Character/Player/Walk.cs" type="Script" id=6]
+[ext_resource path="res://Scenes/Character/Player/Fall.cs" type="Script" id=7]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Jump/Warrior_Jump_2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Jump/Warrior_Jump_3.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_1.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_5.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Jump/Warrior_Jump_1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/idle/Warrior_Idle_4.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/idle/Warrior_Idle_2.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_3.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/idle/Warrior_Idle_1.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_6.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_1.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/idle/Warrior_Idle_5.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_7.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_6.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/idle/Warrior_Idle_3.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/UptoFall/Warrior_UptoFall_2.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_3.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_7.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/HurtnoEffect/Warrior_hurt_2.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_8.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/SlideNoEffect/Warrior-SlideNoEffect_2.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/SlideNoEffect/Warrior-SlideNoEffect_3.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/SlideNoEffect/Warrior-SlideNoEffect_4.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/SlideNoEffect/Warrior-SlideNoEffect_5.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/UptoFall/Warrior_UptoFall_1.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/HurtnoEffect/Warrior_hurt_1.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Fall/Warrior_Fall_2.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/HurtnoEffect/Warrior_hurt_3.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_2.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_5.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_1.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_7.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_5.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_6.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_2.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_3.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Fall/Warrior_Fall_3.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_8.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/HurtnoEffect/Warrior_hurt_4.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_9.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Run/Warrior_Run_4.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/idle/Warrior_Idle_6.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Fall/Warrior_Fall_1.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Attack/Warrior_Attack_4.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/SlideNoEffect/Warrior-SlideNoEffect_1.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Images/Character/Individual Sprite/Dash/Warrior_Dash_4.png" type="Texture" id=54]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 15 ), ExtResource( 23 ), ExtResource( 14 ), ExtResource( 20 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 35 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 27 ), ExtResource( 36 ), ExtResource( 47 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 8 ), ExtResource( 44 ), ExtResource( 52 ), ExtResource( 41 ), ExtResource( 22 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 48 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 37 ), ExtResource( 16 ), ExtResource( 49 ), ExtResource( 12 ), ExtResource( 18 ), ExtResource( 40 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "UpToFall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 43 ), ExtResource( 25 ), ExtResource( 54 ), ExtResource( 38 ), ExtResource( 42 ), ExtResource( 21 ) ],
+"loop": false,
+"name": "Dash",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Slide",
+"speed": 7.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 6, 11.25 )
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="States" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Idle" type="Node2D" parent="States"]
+script = ExtResource( 4 )
+
+[node name="Walk" type="Node2D" parent="States"]
+script = ExtResource( 6 )
+
+[node name="Jump" type="Node2D" parent="States"]
+script = ExtResource( 5 )
+
+[node name="Fall" type="Node2D" parent="States"]
+script = ExtResource( 7 )
+
+[node name="Attack" type="Node2D" parent="States"]
+script = ExtResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.3, 0.3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -21 )
+frames = SubResource( 9 )
+animation = "Attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -11 )
+shape = SubResource( 8 )
+
+[node name="Label_Jumps" type="Label" parent="."]
+margin_left = -22.0
+margin_top = -27.0
+margin_right = 18.0
+margin_bottom = -13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_State" type="Label" parent="."]
+margin_left = -150.0
+margin_top = -86.0
+margin_right = -110.0
+margin_bottom = -72.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
